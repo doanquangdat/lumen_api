@@ -75,4 +75,7 @@ $router->group(['prefix' => 'api'] , function () use ($router) {
     // picture upload
     $router->get('pictures', ['uses' => 'Admin\PictureController@index']);
     $router->post('pictures/create', ['uses' => 'Admin\PictureController@processForm']);
+
+    // Member
+    $router->get('members', ['uses' => 'Admin\MemberController@index']); 
 });
